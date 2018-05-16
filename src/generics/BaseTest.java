@@ -3,6 +3,7 @@ package generics;
 import java.awt.AWTException;
 import java.awt.Desktop;
 import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.IOException;
 
@@ -13,7 +14,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 
-import com.android.dx.cf.iface.Method;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 
@@ -71,10 +71,20 @@ public class BaseTest {
 	{
 		extent.flush();
 //		extent.close();
-		Screen.closePrompt();
+		Robot rob;
+		try {
+			rob = new Robot();
+			rob.keyPress(KeyEvent.VK_ALT);
+			rob.keyPress(KeyEvent.VK_F4);
+			rob.keyRelease(KeyEvent.VK_ALT);
+			rob.keyRelease(KeyEvent.VK_ALT);
+		} catch (AWTException e) {
+			e.printStackTrace();
+		}
+		
 	}
 	
-//	@AfterSuite
+	@AfterSuite
 	public void reports()
 	{
 		File file = new File(Auto_Const.REPORTS_PATH+"test.html");

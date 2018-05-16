@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" ignored="0" total="4" passed="1">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="14291" started-at="2018-05-15T09:28:20Z" finished-at="2018-05-15T09:28:34Z">
+  <suite started-at="2018-05-16T10:07:28Z" name="Suite" finished-at="2018-05-16T10:07:34Z" duration-ms="6459">
     <groups>
     </groups>
-    <test name="Test" duration-ms="14291" started-at="2018-05-15T09:28:20Z" finished-at="2018-05-15T09:28:34Z">
+    <test started-at="2018-05-16T10:07:28Z" name="Test" finished-at="2018-05-16T10:07:34Z" duration-ms="6459">
       <class name="tests.TestCase1">
-        <test-method status="PASS" signature="startTest()[pri:0, instance:tests.TestCase1@20e2cbe0]" name="startTest" is-config="true" duration-ms="2951" started-at="2018-05-15T09:28:20Z" finished-at="2018-05-15T09:28:23Z">
+        <test-method is-config="true" signature="startTest()[pri:0, instance:tests.TestCase1@623a8092]" started-at="2018-05-16T10:07:28Z" name="startTest" finished-at="2018-05-16T10:07:29Z" duration-ms="1771" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="report(java.lang.reflect.Method)[pri:0, instance:tests.TestCase1@20e2cbe0]" name="report" is-config="true" duration-ms="3" started-at="2018-05-15T09:28:23Z" finished-at="2018-05-15T09:28:23Z">
+        <test-method is-config="true" signature="report(java.lang.reflect.Method)[pri:0, instance:tests.TestCase1@623a8092]" started-at="2018-05-16T10:07:29Z" name="report" finished-at="2018-05-16T10:07:29Z" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,11 +22,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:tests.TestCase1@20e2cbe0]" name="test1" duration-ms="727" started-at="2018-05-15T09:28:23Z" finished-at="2018-05-15T09:28:24Z">
+        <test-method signature="test1()[pri:0, instance:tests.TestCase1@623a8092]" started-at="2018-05-16T10:07:29Z" name="test1" finished-at="2018-05-16T10:07:30Z" duration-ms="614" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="FAIL" signature="test2()[pri:0, instance:tests.TestCase1@20e2cbe0]" name="test2" duration-ms="3387" started-at="2018-05-15T09:28:24Z" finished-at="2018-05-15T09:28:27Z">
+        <test-method is-config="true" signature="report(java.lang.reflect.Method)[pri:0, instance:tests.TestCase1@623a8092]" started-at="2018-05-16T10:07:30Z" name="report" finished-at="2018-05-16T10:07:30Z" duration-ms="16" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.TestCase1.test2()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method signature="test2()[pri:0, instance:tests.TestCase1@623a8092]" started-at="2018-05-16T10:07:30Z" name="test2" finished-at="2018-05-16T10:07:33Z" duration-ms="3457" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[null]]>
@@ -35,11 +46,11 @@
               <![CDATA[java.lang.AssertionError: null
 at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.fail(Assert.java:103)
-at tests.TestCase1.test2(TestCase1.java:48)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:497)
+at tests.TestCase1.test2(TestCase1.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
@@ -67,59 +78,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="report(java.lang.reflect.Method)[pri:0, instance:tests.TestCase1@20e2cbe0]" name="report" is-config="true" duration-ms="0" started-at="2018-05-15T09:28:24Z" finished-at="2018-05-15T09:28:24Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.TestCase1.test2()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- report -->
-        <test-method status="FAIL" signature="test3()[pri:0, instance:tests.TestCase1@20e2cbe0]" name="test3" duration-ms="3383" started-at="2018-05-15T09:28:27Z" finished-at="2018-05-15T09:28:31Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.fail(Assert.java:103)
-at tests.TestCase1.test3(TestCase1.java:65)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:497)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test3 -->
-        <test-method status="PASS" signature="report(java.lang.reflect.Method)[pri:0, instance:tests.TestCase1@20e2cbe0]" name="report" is-config="true" duration-ms="0" started-at="2018-05-15T09:28:27Z" finished-at="2018-05-15T09:28:27Z">
+        <test-method is-config="true" signature="report(java.lang.reflect.Method)[pri:0, instance:tests.TestCase1@623a8092]" started-at="2018-05-16T10:07:34Z" name="report" finished-at="2018-05-16T10:07:34Z" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -130,62 +89,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method status="FAIL" signature="test4()[pri:0, instance:tests.TestCase1@20e2cbe0]" name="test4" duration-ms="3188" started-at="2018-05-15T09:28:31Z" finished-at="2018-05-15T09:28:34Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.fail(Assert.java:103)
-at tests.TestCase1.test4(TestCase1.java:92)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:497)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="test3()[pri:0, instance:tests.TestCase1@623a8092]" started-at="2018-05-16T10:07:34Z" name="test3" finished-at="2018-05-16T10:07:34Z" duration-ms="281" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test4 -->
-        <test-method status="PASS" signature="report(java.lang.reflect.Method)[pri:0, instance:tests.TestCase1@20e2cbe0]" name="report" is-config="true" duration-ms="0" started-at="2018-05-15T09:28:31Z" finished-at="2018-05-15T09:28:31Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.TestCase1.test4()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- report -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:tests.TestCase1@20e2cbe0]" name="endTest" is-config="true" duration-ms="216" started-at="2018-05-15T09:28:34Z" finished-at="2018-05-15T09:28:34Z">
+        </test-method> <!-- test3 -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:tests.TestCase1@623a8092]" started-at="2018-05-16T10:07:34Z" name="endTest" finished-at="2018-05-16T10:07:34Z" duration-ms="172" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="reports()[pri:0, instance:tests.TestCase1@623a8092]" started-at="2018-05-16T10:07:34Z" name="reports" finished-at="2018-05-16T10:07:34Z" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reports -->
       </class> <!-- tests.TestCase1 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

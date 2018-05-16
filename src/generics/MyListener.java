@@ -16,13 +16,14 @@ public class MyListener implements ITestListener {
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		BaseTest.logger.log(LogStatus.PASS, "Image matches");
+		
+		BaseTest.logger.log(LogStatus.PASS, "Comparison of Image matches");
 		
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		BaseTest.logger.log(LogStatus.FAIL, "Image doesn't match");
+		BaseTest.logger.log(LogStatus.FAIL, "Comparison of Image doesn't match");
 		BaseTest.logger.log(LogStatus.INFO, BaseTest.logger.addScreenCapture(GenericMethods.takeScreenshot(result.getName())));
 		
 	}
